@@ -236,3 +236,34 @@ hr {
 	color: #fff;
 	font-weight: bold
 }
+
+.loginform {
+	text-align: center;
+	padding: 10px;
+	background: #DDDDDD;
+	margin-top: 10px;
+}
+
+.loginform input {
+	padding: 10px 4px;
+	margin-top: 5px;
+	width: 120px;
+}
+
+.loginform input[type=submit] {
+	margin-left: 10px;
+	width: 50px;
+}
+
+.loginform .error {
+	color: red;
+	margin: 10px;
+	background: #FFDDDD;
+	padding: 10px;
+}
+
+button.logout {
+	float: right;
+	margin-right: 4px;
+	padding: 2px 6px;
+}

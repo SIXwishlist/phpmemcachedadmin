@@ -1,0 +1,32 @@
+<?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>PHPMemcachedAdmin <?php echo CURRENT_VERSION; ?></title>
+	<link rel="stylesheet" type="text/css" href="Public/Styles/Style.css"/>
+	<script type="text/javascript" src="Public/Scripts/Highcharts/highcharts.js"></script>
+	<script type="text/javascript" src="Public/Scripts/script.js"></script>
+</head>
+<body>
+<div style="margin:0pt auto; width:1000px; clear:both;">
+	<div style="font-weight:bold;font-size:1.2em;">PHPMemcachedAdmin <sup><?php echo CURRENT_VERSION; ?></sup>
+	</div>
+	<div class="header corner full-size padding" style="text-align:center;margin-top:5px;">&nbsp;</div>
+	
+	<div style="" class="loginform">
+		<?if (isset($error)) {?>
+			<div class="error"><?=$error?></div>
+		<? } ?>
+		
+		<?if (isset($logout)) { ?>
+			You were logged out successfully. Please enter password to re-login.
+		<?} else {?>
+			To access administration page please provide password.
+		<? } ?>
+		<form action="login.php" method="post">
+			<input type="hidden" name="request_command" value="do-login">
+			<input type="text" name="pass" value="">
+			<input type="submit" value="Enter">
+		</form>
+	</div>
+</div>

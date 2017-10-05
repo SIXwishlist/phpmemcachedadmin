@@ -20,6 +20,8 @@
  * @author Cyrille Mahieux : elijaa(at)free.fr
  * @since 12/04/2010
  */
+require 'login.php';
+
 # Require
 require_once 'Library/Bootstrap.php';
 

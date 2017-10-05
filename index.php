@@ -20,6 +20,8 @@
  * @author elijaa@free.fr
  * @since 20/03/2010
  */
+require 'login.php';
+
 # Require
 require_once 'Library/Bootstrap.php';
 
